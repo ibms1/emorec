@@ -189,3 +189,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+hide_links_style = """
+        <style>
+        a {
+            pointer-events: none;
+            cursor: default;
+            text-decoration: none;
+            color: inherit;
+        }
+        </style>
+        """
+st.markdown(hide_links_style, unsafe_allow_html=True)
